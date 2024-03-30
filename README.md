@@ -1,3 +1,3 @@
 prototype of website for massage clinic
 
-working on project documentation 
+working on project documentation with diagrams UML, DFD, ERD, SEQUENCE 
