@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thankYouPage</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      text-align: center;
+      color: black;
+    }
+
+    .backFone {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw; /* Full width of viewport */
+      height: 100vh; /* Full height of viewport */
+      overflow: hidden; /* Hide any overflow */
+      z-index: -1; /* Behind other content */
+    }
+
+    .backFone img {
+      min-width: 100%; /* Minimum width is viewport width */
+      min-height: 100%; /* Minimum height is viewport height */
+      object-fit: cover; /* Ensure the image covers the entire container */
+    }
+  </style>
+</head>
+<body>
+  <div class="text">
+    <h1>Thank you for contacting us<br>We will get back to you as soon as possible.</h1>
+  </div>
+  <div class="backFone">
+    <img src="userCSS\pic\nebo1PNG.jpg" alt="">
+  </div>
+</body>
+</html>

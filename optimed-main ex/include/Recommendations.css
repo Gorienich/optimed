@@ -1,0 +1,279 @@
+body {
+  background-color: black;   
+}
+h1{
+	text-align:center;
+	color:goldenrod;
+}
+h2 {
+  text-align: center;   /* לעמיד טקסט בעמצא של העמוד  */
+  color: goldenrod;       /* צבע טקסט   */
+}
+
+a {
+  text-decoration: none;   /* הסתר קו תחתון */
+  color: brown;
+}
+
+a:hover {
+  color: goldenrod;
+}
+
+/* בלוק ראשי  */
+.conteiner {                              
+  width: 100%;               /* רוחב               */
+  margin: 25px 0;            /* הזחה למטה ולמלא   */
+  display: flex;             /* גמישות             */
+  flex-direction: row;       /* גמישות לפי שורות  */
+  position: relative;        /* רלטיבי             */
+  align-items: center;       /* הגדרת הגמישות     */
+  justify-content: center;   /* הגדרת הגמישות     */
+}
+
+
+.conteiner div {             /* הגדרת בלוקים של קונטיינר   */
+  width: 25%;                /* רוחב                */
+  text-align: center;        /* לעמיד טסקת במרכז   */
+  font-size: large;          /* גודל הטקסט         */
+  font-weight: bold;         /* עובי הטקסט         */
+}
+
+.conteiner div:hover {           /* שינוי צורה לבלוק   */
+  transform: scale(1.15);
+  transition: all 0.5s ease;
+  font-weight: bolder;
+  color: goldenrod;
+}
+
+/*   form   טופס לרגיסטרציה  */
+form {                       
+  width: 70%;                   
+  margin: 10px 15%;
+  position: relative;
+  text-align:center;
+  size:700px,70px;
+}
+label{
+	color: aqua;
+	font-size: 20px;
+
+}
+p{
+	color: white;
+	font-size:20px;
+}
+form input {                        /*     שדה של טופס    */
+  position: relative;               /* רלטיבי             */
+  width: 70%;                       /* רוחב               */
+  height: 25px;                     /* גובה               */
+  margin: 10px 15%;                 /* הזחה               */ 
+  border-radius: 25px;              /* גילגול פינות של המסגרת */
+  text-align: center;               /* טקסט לפי מרכז     */
+  font-weight: 600;                 /* עובי הטקסט        */
+  color: bisque;                  /* צבע                */
+  background: transparent;          /* שקיפות בקגראונד 0 */
+  border: none;                     /*  חיצונית הסתר מסגרת      */
+  outline: none;                    /* הסתר מסגרת פנימית        */
+  border-bottom: 3.5px solid rgb(249, 253, 0);      /* צבע לתחנון לש השדה  */
+  transition: 0.05s linear;                           /* הגדרת זמן לשינוי צבע */
+}
+input:hover {
+  border-color: white;           /*שינוי צבע בזמן ריחוף  */
+}
+::placeholder {
+  color: aqua;                   /* צבע להודעה מהשדה  */
+}
+::placeholder :focus {             /* צבע בזמן שימוש מהמשתמש */
+  color: bisque;
+}
+/* הגדרת כפתורים של הטופס */
+form button {
+  height: 35px;                     
+  width: 30%;
+  margin: 20px 35% 5px 35%;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  color: brown;
+  font-weight: 300;
+  box-shadow: 0.3px 0.3px,
+    0 0 1em rgb(246, 246, 64),
+    0 0 1em rgb(209, 0, 0);
+  background: transparent;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  border-bottom: 3.5px solid rgb(249, 253, 0);
+  border-top: 3.5px solid rgb(249, 253, 0);
+  transition: 0.5s linear;
+}
+/* שינוי בזמן ריחוף  */
+form button:hover,
+.showPopup:hover{
+  background-color: cyan;
+  border-bottom-color: rgb(218, 165, 32);
+  border-top-color: goldenrod;
+  transform: scale(1.15);
+  transition: all 0.5s ease;
+  color: brown;
+}
+/* שינוי בזמן לחיצה על כפתור  */ 
+form button:active {
+  transform: translateY(4px);
+}
+
+
+
+.form-conteiner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0.5px 0.5px,
+    0 0 1em aqua,
+    0 0 1em rgb(209, 0, 0);
+}
+
+.contact-form {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  background: url("pic/wood.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* בזמן הריחוף על כפתור   */
+#popUp-close:hover {
+  box-shadow: 0.3px 0.3px,
+    0 0 1em rgb(246, 246, 64),
+    0 0 1em rgb(209, 0, 0);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+/* הודעה משרת  */
+.error, .popUp-message{ 
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: red;
+}
+span.stars, span.stars span {
+    display: block;
+    background: url(socialIcons/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+content: "\f005";
+font-family: "Font Awesome 5 Free"; /* זה שם הפונט לאייקונים הללו */
+font-weight: normal;
+font-size: 16px; /* זו ההגדרה שתקבע את גודל הכוכבים. הגדירו אותה לפי העיצוב שאתם רוצים */
+
+
+
+#rating_stars_container{
+   font-size: 0; /* מיועד כדי למנוע רווחים מיותרים בין הכוכבים */
+   direction: ltr; /* מיועד ליישור הכוכבים בסדר הנכון */
+}
+#rating_stars_container input{ /* הגדרות להסתרת האינפוטים מהעין */
+   border: 0;
+   clip: rect(0,0,0,0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px;
+}
+#rating_stars_container label:before{
+   content: "\f005";
+   font-family: "Font Awesome 5 Free";
+   font-weight: normal;
+   font-size: 40px; /* זו ההגדרה שתקבע את גודל הכוכבים. הגדירו אותה לפי העיצוב שאתם רוצים */
+   color: gold; /* תנו איזה צבע שאתם רוצים :) */
+   padding: 0 5px; /* יצירת מרווח בין הכוכבים */
+}
+#rating_stars_container label:hover:before, 
+#rating_stars_container label:hover ~ label:before, /* שורה זו נועדה להדגיש במעבר עכבר את כל הכוכבים בדירוג נמוך יותר */ 
+#rating_stars_container input:checked ~ label:before{
+   font-weight: bold;
+}
+
+
+.card {
+max-width: 33rem;
+background: black;
+margin: 0 1rem;
+padding: 1rem;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+width: 100%;
+border-radius: 0.5rem;
+}
+
+.star {
+font-size: 10vh;
+cursor: pointer;
+color: white;
+
+}
+
+.one {
+color: rgb(255, 0, 0);
+}
+
+.two {
+color: rgb(255, 106, 0);
+}
+
+.three {
+color: rgb(251, 255, 120);
+}
+
+.four {
+color: rgb(255, 255, 0);
+}
+
+.five {
+color: rgb(24, 159, 14);
+}
+h3{
+	color:white;
+}
+
+   #div1{
+	   margin-left:150px;
+	   width:750px;
+	   height:450px;
+	   background-image:url("img/2.jpg");
+	   background-size:100% 100%;
+	   animation:anim1 ease-in-out 30s infinite;
+	   }
+	   @keyframes anim1{
+	     0%{
+		 	   background-image:url("img/3.jpg");
+		 }
+		 25%{
+		  	   background-image:url("img/4.jpg");
+		 }
+		 50%{
+		 	   background-image:url("img/5.jpg");
+		 }
+	
+		 75%{
+		 	   background-image:url("img/6.jpg");
+		 }
+		 100%{ 
+				background-image:url("img/7.jpg");
+		}
+     }
