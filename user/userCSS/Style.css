@@ -4,7 +4,28 @@ body {
   background-color: rgb(26, 26, 26);
   overflow-x: hidden;
 }
-
+.introduce{
+  position: fixed;
+  top: 20px;
+  left: 5vw;
+  z-index: 10;
+  width: 90vw;
+  height: 90vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.introduce button{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: large;
+  background-color: aqua;
+  cursor: pointer;
+}
 /***********--  style for text --************/
 h2 {
   color: goldenrod;
