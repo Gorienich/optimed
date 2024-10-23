@@ -23,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const tiktokShareButton = document.getElementById('tiktokShare');
     /***** scroll up button ******/
     const scrollToTopButton = document.getElementById("scrollToTop");
+
+    // intro btn
+    const introBtn = document.getElementById('btn-intro');
+    const introBlock = document.querySelector('.introduce');
+    introBtn.addEventListener('click', () => {
+        introBlock.style.display = 'none'; // Corrected this line
+    });
+    
     /* header config  */
     function toggleHeader() {
         if (window.innerWidth <= 768) {
