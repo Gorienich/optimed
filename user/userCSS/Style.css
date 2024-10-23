@@ -7,9 +7,9 @@ body {
 .introduce{
   position: fixed;
   top: 20px;
-  left: 5vw;
+  left: 5%;
   z-index: 10;
-  width: 90vw;
+  width: 90%;
   height: 90vh;
   background-color: black;
   display: flex;
