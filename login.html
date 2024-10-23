@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="user/userCSS/register&loginCSS.css"> <!--  src לקובץ CSS  -->
+</head>
+
+<body>
+<div id="loginForm">
+    <div class="conteiner"> <!-- נביגציה  -->
+        <div><a rel="noopener" noreferrerwindow.opener href="index.html">Optimed</a></div>
+        <div><a rel="noopener" noreferrerwindow.opener href="registor.html">Registration</a></div>
+    </div>
+        <h2>Login</h2>
+        <!-- טופס כניסה לאזור האישי  -->
+        <form method="post">
+            <label for="logEmail"></label>
+            <input type="email" id="logEmail" name="email" placeholder="Email" autocomplete="off" required>
+            <label for="logpassword"></label>
+            <input type="password" id="logpassword" name="password" placeholder="password" maxlength="16" minlength="8" required>
+            <button type="submit" name="login-submit">Login</button>
+        </form>
+        <button class="showPopup" id="showPopupButton">Forgot Password?</button> <!-- כפתור להחלפת סיסמא -->
+    </div>
+</body>
+
+</html>
