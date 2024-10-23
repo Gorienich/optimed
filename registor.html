@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>registration</title>   
+     <link rel="stylesheet" href="user/userCSS/register&loginCSS.css">     <!-- src to css file  -->
+</head>
+
+<body>
+     <div class="conteiner">
+          <div><a rel="noopener" noreferrerwindow.opener href="index.html">Optimed</a></div>  <!-- redirect to landing page -->
+          <div><a rel="noopener" noreferrerwindow.opener href="login.html">login</a></div>       <!-- redirect to login page -->
+     </div>
+     <h2>Creat profile</h2>
+     <form id="registrationForm"  method="post" enctype="multipart/form-data" required>
+          <input id="fname" placeholder="Enter your name" type="text" name="UserName" autocomplete="on" required>
+          <input id="lname" placeholder="entar your last name" type="text" name="UserLastName" autocomplete="on"  required>
+          <input id="email" placeholder="enter e-mail" type="email" name="UserEmail" autocomplete="off" required>
+          <input id="pass1" placeholder="create your password  '8-20 chars'" type="password" name="pass1" value=""  autocomplete="off" maxlength="16" minlength="8" required>
+          <input id="pass2" placeholder="repeat your password  '8-20 chars'" type="password" name="pass2" value="" autocomplete="off"  maxlength="16" minlength="8" required>
+          <input id="userTell" placeholder="Enter user tell" type="text" name="UserTell" pattern="[0-9]{10}" title="phone numberhave to be a 10-digit number" maxlength="10" required>
+          <button type="submit" name="newUser">Create</button>  
+          <button type="reset">reset</button>
+     </form>    
+     <script src="include/js/registration.js"></script>  
+</body>
+</html>
